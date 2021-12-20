@@ -1,0 +1,19 @@
+﻿h1 {
+    text-align: center;
+    padding: 12px;
+    margin: 5px;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0, 0.315);
+}
+
+.promocao {
+    text-decoration: line-through red;
+    color: red;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.hs {
+    width: 25%;
+}

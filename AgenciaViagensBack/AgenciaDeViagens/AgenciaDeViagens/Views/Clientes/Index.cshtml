@@ -1,0 +1,132 @@
+﻿@model IEnumerable<AgenciaDeViagens.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Contato";
+}
+<link rel="stylesheet" href="~/css/StyleSheet.css">
+<section class="mb-4">
+    <h1 class="h1-responsive font-weight-bold text-center my-4">Contato</h1>
+
+    <p class="text-center w-responsive mx-auto mb-5">
+        Tem alguma pergunta, ou sugestão? Mande pra gente!
+    </p>
+
+    <div class="row">
+
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Nome</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Assunto</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Sua mensagem</label>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="alert('Mensagem enviada!')">Enviar</a>
+            </div>
+            <div class="status"></div>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li>
+                    <img class="hs" src="~/css/Imagens/casa.png" alt="casa">
+                    <p>Avenida dos Bobos, Numero 00000, BR</p>
+                </li>
+
+                <li>
+
+                    <img class="hs" src="~/css/Imagens/zap.png" alt="zap">
+                    <p>11-91111-1111</p>
+                </li>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Endereco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cpf)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Endereco)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cpf)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-secondary">Detalhes</a>
+                    <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger">Deletar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<p>
+    <a asp-action="Create">Adicionar Contato</a>
+</p>

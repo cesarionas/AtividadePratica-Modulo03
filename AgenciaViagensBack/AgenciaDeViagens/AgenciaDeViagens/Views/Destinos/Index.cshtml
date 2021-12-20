@@ -1,0 +1,261 @@
+﻿@model IEnumerable<AgenciaDeViagens.Models.Destino>
+
+@{
+    ViewData["Title"] = "Destinos";
+}
+
+<link rel="stylesheet" href="~/css/StyleSheet.css">
+
+
+<h1>Nossos Destinos</h1>
+
+
+<div class="container my-4">
+    <div class="row">
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/al.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Alemanha</h4>
+                    <p class="card-text">
+                        A Alemanha é um país organizado, com belas paisagens de castelos e florestas, museus esplêndidos e metrópoles como Berlim.<br> <strong>R$ 12,600</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/hlnd.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Holanda</h4>
+                    <p class="card-text">
+                    <p>
+                        Holanda: veja dicas de passeios, restaurantes, atrações, gastronomia, hotéis, parques de flores, museus <br> e city-tours por Amsterdã, Rotterdam. <br> <strong>R$ 5,900</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/it.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Itália</h4>
+                    <p class="card-text">
+                        Itália: guia com conteúdo da Viagem e Turismo com sugestão de atrações, restaurantes, roteiros, gastronomia, passeios e fotos.<br> <strong>R$ 11,900</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/fr.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">França</h4>
+                    <p class="card-text">
+                        França: País que mais recebe turistas no mundo, a França oferece museus maravilhosos, paisagens belíssimas, muito charme e boa comida.<br> <strong>R$ 20,000</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/madrid.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Espanha</h4>
+                    <p class="card-text">
+                        Espanha: Arena de touros de Las Ventas, Madri Thinkstock/Thinkstock. Melhor época para visitar.<br> <strong>R$ 16,000</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/rss.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Rússia</h4>
+                    <p class="card-text">
+                        A Rússia é o maior país do mundo, com ótimas paisagens e atrações culturais em cidades como Moscou e São Petersburgo.<br> <strong>R$ 10,000</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/belg.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Bélgica</h4>
+                    <p class="card-text">
+                        Bélgica: dicas de passeios, hotéis, atrações, restaurantes, gastronomia, pacotes, onde comer, onde ficar em Flandres e Valônia.<br> <strong>R$ 7,600</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/portugal.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Portugal</h4>
+                    <p class="card-text">
+                    <p>
+                        A visita a Portugal é como uma jornada à terra-mãe, com a história e gastronomia de cidades como Lisboa, Porto, Sintra e Guimarães.<br> <strong>R$ 4,600</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/arg.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Argentina</h4>
+                    <p class="card-text">
+                    <p>Argentina: descubra o mapa com destinos interessantes, como Mendoza, El Calafate, Bariloche, Ushuaia e o melhor de Buenos Aires.<br> <strong>R$ 3,700</strong></p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/chile.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Chile</h4>
+                    <p class="card-text">
+                    <p>
+                        Chile: Onde o impossível é possível. Do extremo norte com o deserto mais seco do mundo, ao sul austral com gelo eterno e quedas de água invertidas.<br> <strong>R$ 2,700</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/colo.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Colombia</h4>
+                    <p class="card-text">
+                        Colômbia: Ideal para quem gosta de lindas paisagens naturais sem deixar de lado a economia<br> <strong>R$ 1,500</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/eua.jpeg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Eua</h4>
+                    <p class="card-text">
+                    <p>
+                        Descubra a América. Os Estados Unidos da América têm tanto a oferecer! Aprenda sobre sua história.<br> <strong>R$ 11,000</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/cc.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Canadá</h4>
+                    <p class="card-text">
+                    <p>
+                        Canadá: dicas de roteiros, viagem, atrações turísticas, hotéis, restaurantes, turismo, onde ficar, onde comer e outras informações..<br> <strong>R$ 9,000</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/costam.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Costa do Marfim</h4>
+                    <p class="card-text">
+                    <p>
+                    <p>
+                        Costa do Marfim. Roteiros de viagens, dicas sobre o que ver e fazer, onde ficar e quando viajar para Costa do Marfim em turismo.<br> <strong>R$ 12,100</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/jamaica.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Jamaica</h4>
+                    <p class="card-text">
+                    <p>
+                        Jamaica: Um destino para turistas que buscam praias paradisíacas, reggae, rastafáris, resorts all-inclusive e turismo tanto de massa.<br> <strong>R$ 15,000</strong>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 my-4">
+            <div class="card">
+                <img class="card-img-top" src="~/css/Imagens/af.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">África do Sul</h4>
+                    <p class="card-text">
+                    <p>
+                        Um país que pode surpreender até mesmo o viajante mais experiente, o turismo na África do Sul oferece atrações para todos os gostos<br> <strong>R$ 17,000</strong>
+                    </p>
+                    </p>
+                    <a onclick="alert('Item adicionado ao Carrinho')" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pais)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Data)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Horario)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Pais)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Data)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Horario)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning">Editar</a>
+                        <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-secondary">Detalhes</a>
+                        <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger">Deletar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p>
+
+        <a asp-action="Create">Adicionar novo destino</a>
+    </p>
